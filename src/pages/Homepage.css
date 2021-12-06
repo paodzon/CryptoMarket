@@ -1,0 +1,66 @@
+.homepage{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cryptostats__container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around
+}
+
+
+.cryptostats__wrapper{
+    margin: 10px 10px 10px 0px;
+    display: flex;
+}
+.cryptostats__wrapper .label{
+    color: rgb(161, 167, 187) !important;
+} 
+.cryptostats__wrapper .value{
+    color: #fff !important
+} 
+.ui.statistics .statistic > .label, .ui.statistic > .label {
+    text-align: left !important;
+}
+.ui.statistics .statistic > .value, .ui.statistic > .value {
+    font-size: 2em !important;
+    text-align: left !important;
+}
+
+.homepage__topcrypto{
+    margin-top: 70px;
+    
+}
+
+.topcrypto__flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+.homepage__topcrypto h1{
+    margin-left: 30px;
+}
+
+.homepage__cryptostats{
+    border: 1px solid #3a3f50;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.cryptostats__header{
+    border-bottom: 1px solid #3a3f50;
+}
+
+@media only screen and (max-width: 600px) {
+    .cryptostats__container{
+        flex-direction: column;
+    }
+    .homepage__cryptostats{
+        margin: 0 !important;
+    }
+  }

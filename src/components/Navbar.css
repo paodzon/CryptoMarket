@@ -1,0 +1,38 @@
+nav{
+    display: flex;
+    background: #11131B;
+    padding: 15px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    cursor: pointer;
+    margin: 15px 10px 0px 15px;
+}
+.nav__logo{
+    margin-top: 5px;
+}
+
+nav ul a{
+    color: #fff;
+}
+
+nav ul a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        margin: 10px 0 0 0 !important;
+        
+    }
+    nav ul{
+        flex-direction: column;
+    }
+  }
