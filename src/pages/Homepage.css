@@ -48,12 +48,16 @@
     border: 1px solid #3a3f50;
     border-radius: 5px;
     padding: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
 
 }
 .cryptostats__header{
     border-bottom: 1px solid #3a3f50;
+}
+
+.topcrypto__cards a{
+    color:#fff;
 }
 
 @media only screen and (max-width: 600px) {

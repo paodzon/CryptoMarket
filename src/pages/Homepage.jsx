@@ -1,5 +1,7 @@
-import React from 'react';
-import { useSelector} from 'react-redux';
+import React,{useEffect} from 'react';
+import { Link } from 'react-router-dom';
+import { useSelector, useDispatch} from 'react-redux';
+import { clearCrypto } from '../actions';
 import Card from '../components/Card';
 
 import './Homepage.css';
@@ -8,8 +10,11 @@ const Homepage = () =>{
 
     const stats = useSelector((state) => state.crypto.cryptoData.stats);
     const coins = useSelector((state) => state.crypto.cryptoData.coins);
- 
-    console.log(coins)
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+      dispatch(clearCrypto());
+    }, []);
 
     const renderStats = () =>{
         const formatter = new Intl.NumberFormat('en-US', {
@@ -72,15 +77,18 @@ const Homepage = () =>{
             if(i < 10){
                 return (
                     <div className="topcrypto__cards">
+                      <Link to={`/crypto/${coin.id}`}> 
                       <Card
                         key={coin.id}
-                        id={i+1}
+                        counter={i+1}
                         name={coin.name}
                         price={coin.price}
                         coin={coin.marketCap}
                         change={coin.change}
                         img={coin.iconUrl}
                       />
+                      </Link>
+                      
                     </div>
                   );
             }

@@ -1,0 +1,45 @@
+.cryptocurrencies{
+    margin: 70px;
+}
+
+.cryptocurrencies table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.cryptocurrencies td, th {
+    border-bottom: 1px solid #3a3f50;
+    text-align: left;
+    padding: 8px;
+  }
+
+.cryptocurrencies__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchbar{
+    height: 25px;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+}
+.crypto__align{
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+}
+
+.crypto__align img{
+    margin-right: 5px;
+}
+
+.crypto__green{
+    color: green;
+}
+
+.crypto__red{
+    color: red;
+}

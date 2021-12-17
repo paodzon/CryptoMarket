@@ -1,0 +1,76 @@
+.cryptodetails{
+    margin: 50px 50px 50px 50px
+}
+
+.cryptodetails__nameHeader{
+    display: flex;
+    align-items: center;
+}
+
+.cryptodetails__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cryptodetails__goback{
+    margin-right: 100px;
+    border: 1px solid #3a3f50;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.cryptodetails__goback svg{
+    font-size: 50px;
+}
+
+.cryptodetails__nameHeader h2{
+    margin-left: 10px;
+}
+.cryptodetails__symbol{
+    background: #323546;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #a1a7bb;
+    margin-left: 10px;
+}
+.cryptodetails__rank{
+    background: #323546;
+    border-radius: 5px;
+    width: 60px;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.cryptodetails__price{
+    margin-top: 0px;
+}
+
+.cryptodetails__statswrapper{
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #323546;; 
+}
+
+.cryptodetails__stats{
+    margin-top: 20px;
+    display: flex;
+    font-size: 12px;
+}
+.statswrapper__margin{
+    margin-left: 50px;
+}
+.cryptodetails__statsleft{
+    margin-right: 100px;
+}
+
+.cryptodetails__description{
+    margin-top: 20px;
+}

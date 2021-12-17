@@ -1,0 +1,27 @@
+.exchanges{
+    margin: 70px 100px 100px 100px;
+}
+
+.exchanges table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+.exchanges td, th {
+    border-bottom: 1px solid #3a3f50;
+    text-align: left;
+    padding: 8px;
+  }
+  .exchanges td div{
+      display: flex;
+  }
+
+  .exchanges td img{
+      margin-right: 5px;
+  }
+  .exchanges__header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
