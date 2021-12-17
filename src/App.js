@@ -14,7 +14,7 @@ import CryptoDetails from "./pages/CryptoDetails";
 function App() {
   const dispatch = useDispatch();
 
-  useEffect(async () => {
+  useEffect(() => {
     dispatch(getExchanges());
     dispatch(getCryptos());
     dispatch(getNews());

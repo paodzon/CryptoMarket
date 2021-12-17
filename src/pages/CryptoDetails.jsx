@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getCrypto } from "../actions";
 import "./CryptoDetails.css";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-
+import CircularProgress from '@mui/material/CircularProgress';
 
 const CryptoDetails = () => {
 
@@ -25,7 +25,7 @@ const CryptoDetails = () => {
     minimumFractionDigits: 0,
   });
   if(!coinDetails){
-    return <div>LOADING</div>
+    return <div className="loading"><CircularProgress /></div>
   }
   return (
     <div className="cryptodetails">
